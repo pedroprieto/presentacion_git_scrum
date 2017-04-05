@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Scrum y GitHub</title>
+<meta name="author" content="(Pedro Prieto)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Scrum y GitHub</h1><h2 class="author">Pedro Prieto</h2>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orgheadline8">Introducción</a></li>
+<li><a href="#/slide-orgheadline36">Scrum</a></li>
+<li><a href="#/slide-orgheadline48">GitHub</a></li>
+<li><a href="#/slide-orgheadline57">GitHub y Scrum</a></li>
+<li><a href="#/slide-orgheadline59">Demo</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-orgheadline8">
+<h2 id="orgheadline8">Introducción</h2>
+<div class="outline-text-2" id="text-orgheadline8">
+</div></section>
+</section>
+<section>
+<section id="slide-orgheadline1">
+<h3 id="orgheadline1">Waterfall</h3>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="images/waterfall.svg" >
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline3">
+<h3 id="orgheadline3">Agile</h3>
+<ul>
+<li class="fragment roll-in">Personas por delante de procesos y herramientas</li>
+<li class="fragment roll-in">Software funcional por delante de documentación</li>
+<li class="fragment roll-in">Colaboración con el cliente frente a contrato a priori</li>
+<li class="fragment roll-in">Adaptación al cambio frente a ceñirse al plan</li>
+<li class="fragment roll-in">Equipos auto organizados</li>
+<li class="fragment roll-in">Evaluación y adaptación continuas</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline2">
+<h4 id="orgheadline2">Agile no es&#x2026;</h4>
+
+<div class="figure">
+<p><img src="https://image-store.slidesharecdn.com/128c6f87-a881-41cb-ad46-ace12bd27e3f-large.png" alt="128c6f87-a881-41cb-ad46-ace12bd27e3f-large.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h3 id="orgheadline7">Proyecto Sentinel (FBI)</h3>
+<ul>
+<li>Modernización de la infraestructura de información del FBI</li>
+<li>Hasta los atentados del 11S se enviaban faxes o CDs</li>
+<li>No había manera de enviar un correo elctrónico de manera segura con fotos de posibles sospechosos</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline4">
+<h4 id="orgheadline4">Primer intento - 2001</h4>
+<ul>
+<li class="fragment roll-in">730000 líneas de código</li>
+<li class="fragment roll-in">$170M</li>
+<li class="fragment roll-in">Abandonado en 2005</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline5">
+<h4 id="orgheadline5">Segundo intento - 2006</h4>
+<ul>
+<li class="fragment roll-in">Presupuesto: $300M</li>
+<li class="fragment roll-in">Coste final: $500M - $600M</li>
+<li class="fragment roll-in">Abandonado en 2010</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline6">
+<h4 id="orgheadline6">Adopción de Scrum - 2010</h4>
+<ul>
+<li class="fragment roll-in">Presupuesto: $30M</li>
+<li class="fragment roll-in">Plantilla reducida de 400 a 40 personas</li>
+<li class="fragment roll-in">Sistema operativo al cabo de un año</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline36" data-background="http://www.reactiongifs.us/wp-content/uploads/2015/02/explain_like_im_five_office.gif" data-background-transition="slide">
+<h2 id="orgheadline36">Scrum</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
+<h3 id="orgheadline9">Proceso</h3>
+
+<div class="figure">
+<p><img src="images/Scrum_Framework.png" alt="Scrum_Framework.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
+<h3 id="orgheadline10">Popularidad</h3>
+
+<div class="figure">
+<p><img src="images/scrum_stackoverflow.png" alt="scrum_stackoverflow.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline12">
+<h3 id="orgheadline12">Roles</h3>
+
+<div class="figure">
+<p><img src="https://www.implementingscrum.com/images/060911-scrumtoon.jpg" alt="060911-scrumtoon.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline11">
+<h4 id="orgheadline11">Roles</h4>
+
+<div class="figure">
+<p><img src="images/scrum_roles.png" alt="scrum_roles.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline26">
+<h3 id="orgheadline26">Eventos</h3>
+<ul>
+<li class="fragment roll-in">Planning meeting</li>
+<li class="fragment roll-in">Sprint</li>
+<li class="fragment roll-in">Daily scrum / standup</li>
+<li class="fragment roll-in">Demo</li>
+<li class="fragment roll-in">Retrospectiva</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline13">
+<h4 id="orgheadline13">Planning</h4>
+
+<div class="figure">
+<p><img src="images/scrum_planning_meeting.jpg" alt="scrum_planning_meeting.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline14">
+<h4 id="orgheadline14">Planning</h4>
+
+<div class="figure">
+<p><img src="images/planning_clase_1.jpg" alt="planning_clase_1.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline15">
+<h4 id="orgheadline15">Planning</h4>
+
+<div class="figure">
+<p><img src="images/planning_clase_2.jpg" alt="planning_clase_2.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline16">
+<h4 id="orgheadline16">Planning</h4>
+
+<div class="figure">
+<p><img src="images/planning_clase_4.jpg" alt="planning_clase_4.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline17">
+<h4 id="orgheadline17">Planning</h4>
+
+<div class="figure">
+<p><img src="images/planning_clase_5.jpg" alt="planning_clase_5.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline18">
+<h4 id="orgheadline18">Planning (Poker)</h4>
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/CrispPlanningPokerDeck.jpg" alt="CrispPlanningPokerDeck.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline19">
+<h4 id="orgheadline19">Sprint</h4>
+<ul>
+<li class="fragment roll-in">Período de "trabajo"</li>
+<li class="fragment roll-in">Duración fija</li>
+<li class="fragment roll-in">De 2 a 4 semanas (la mayoría)</li>
+<li class="fragment roll-in">Durante el sprint no pueden cambiarse los objetivos definidos (funcionalidades, etc.)</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline20">
+<h4 id="orgheadline20">Daily Scrum</h4>
+
+<div class="figure">
+<p><img src="images/dailyscrum_1.jpg" alt="dailyscrum_1.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline21">
+<h4 id="orgheadline21">Daily Scrum</h4>
+
+<div class="figure">
+<p><img src="images/planning_clase_3.jpg" alt="planning_clase_3.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline22">
+<h4 id="orgheadline22">Daily Scrum</h4>
+
+<div class="figure">
+<p><img src="images/dailyscrum_2.jpg" alt="dailyscrum_2.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline23">
+<h4 id="orgheadline23">Demo</h4>
+
+<div class="figure">
+<p><img src="images/review_clase_1.jpg" alt="review_clase_1.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline24">
+<h4 id="orgheadline24">Demo</h4>
+
+<div class="figure">
+<p><img src="images/review_clase_2.jpg" alt="review_clase_2.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline25">
+<h4 id="orgheadline25">Retrospectiva</h4>
+
+<div class="figure">
+<p><img src="images/retrospectiva_1.jpg" alt="retrospectiva_1.jpg" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline35">
+<h3 id="orgheadline35">Artefactos</h3>
+<ul>
+<li class="fragment roll-in">Product Backlog</li>
+<li class="fragment roll-in">Sprint Backlog</li>
+<li class="fragment roll-in">Scrum Board</li>
+<li class="fragment roll-in">Product increment</li>
+<li class="fragment roll-in">Burn Down Chart</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline27">
+<h4 id="orgheadline27">Product Backlog</h4>
+<ul>
+<li class="fragment roll-in">Lista <b>ordenada</b> (priorizada) de funcionalidades/características deseadas (<b>stories</b>)</li>
+<li class="fragment roll-in">Visible para todas las partes interesadas</li>
+<li class="fragment roll-in">Cualquiera puede añadir nuevos elementos</li>
+<li class="fragment roll-in">Los elementos de la parte superior están más detallados</li>
+<li class="fragment roll-in">Cada elemento especifica el <b>qué</b> (no el cómo)</li>
+<li class="fragment roll-in">Cada elemento tiene una estimación de dificultad/duración (<b>story points</b>)</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline28">
+<h4 id="orgheadline28">Sprint Backlog</h4>
+<ul>
+<li class="fragment roll-in">Selección de elementos del product backlog que el equipo considera que puede completar en un sprint</li>
+<li class="fragment roll-in">Se elabora en la sesión de planificación</li>
+<li class="fragment roll-in">Visible para el equipo y referenciado durante el <i>daily scrum</i></li>
+<li class="fragment roll-in">No se pueden añadir nuevas funcionalidades a implementar una vez que se han fijado (<b>fixed scope</b>)</li>
+<li class="fragment roll-in">Es posible que haya que realizar tareas adicionales no previstas para alcanzar los objetivos definidos</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline29">
+<h4 id="orgheadline29">Scrum board</h4>
+
+<div class="figure">
+<p><img src="images/scrum_kanban_board.jpg" alt="scrum_kanban_board.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline30">
+<h4 id="orgheadline30">Scrum Board</h4>
+
+<div class="figure">
+<p><img src="images/scrum_board_2.jpg" alt="scrum_board_2.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline31">
+<h4 id="orgheadline31">Scrum board</h4>
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Scrum_task_board_example.jpg/579px-Scrum_task_board_example.jpg" alt="579px-Scrum_task_board_example.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline32">
+<h4 id="orgheadline32">Product increment</h4>
+<ul>
+<li class="fragment roll-in">Cada funcionalidad (<b>story</b>) implementada debe tener valor en sí misma</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline33">
+<h4 id="orgheadline33">Burn Down Chart</h4>
+<ul>
+<li class="fragment roll-in">Muestra la cantidad de trabajo (medido en <b>story points</b>) que queda por realizar</li>
+<li class="fragment roll-in">Se estima diariamente en la sesión <i>daily scrum</i></li>
+<li class="fragment roll-in">Facilita la auto-organización</li>
+<li class="fragment roll-in">Para uso del equipo únicamente (no como medida de presión por parte de los gestores)</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline34">
+<h4 id="orgheadline34">Burndown chart</h4>
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Burn_down_chart.png" alt="Burn_down_chart.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline48" data-background="https://s3.amazonaws.com/external_clips/attachments/79257/original/chinhands-3.gif?1444766396" data-background-transition="slide">
+<h2 id="orgheadline48">GitHub</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline37">
+<h3 id="orgheadline37">Características</h3>
+<ul>
+<li class="fragment roll-in">Control de versiones (obvio)</li>
+<li class="fragment roll-in">Plataforma más utilizada para proyectos OpenSource</li>
+<li class="fragment roll-in">Colaboración</li>
+<li class="fragment roll-in">Alojamiento web estático gratuito (GitHub Pages)</li>
+<li class="fragment roll-in">Gestión de incidencias (issues)</li>
+<li class="fragment roll-in">Gestión de proyectos (mínima)</li>
+<li class="fragment roll-in">Integración continua</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline38">
+<h3 id="orgheadline38">Colaboración: Forks y Pull Requests</h3>
+<dl>
+<dt>Fork</dt><dd>Copia de un repositorio para su modificación/mejora/edición</dd>
+<dt>Pull Request</dt><dd>Petición para integrar los cambios realizados en el repositorio original</dd>
+
+</dl>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline39">
+<h3 id="orgheadline39">Alojamiento: GitHub Pages</h3>
+
+<div class="figure">
+<p><img src="images/ghpages.png" alt="ghpages.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline43">
+<h3 id="orgheadline43">Incidencias: Issues</h3>
+
+<div class="figure">
+<p><img src="images/issues.png" alt="issues.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline40">
+<h4 id="orgheadline40">Milestones</h4>
+
+<div class="figure">
+<p><img src="images/milestones.png" alt="milestones.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline41">
+<h4 id="orgheadline41">Asignación</h4>
+
+<div class="figure">
+<p><img src="images/issues_milestones.png" alt="issues_milestones.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline42">
+<h4 id="orgheadline42">Planificación</h4>
+
+<div class="figure">
+<p><img src="images/milestone_assigned.png" alt="milestone_assigned.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline44">
+<h3 id="orgheadline44">Proyectos</h3>
+
+<div class="figure">
+<p><img src="images/projects.png" alt="projects.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline45">
+<h3 id="orgheadline45">Integración continua</h3>
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Continous_Delivery_Test_Strategy.jpg/640px-Continous_Delivery_Test_Strategy.jpg" alt="640px-Continous_Delivery_Test_Strategy.jpg" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline46">
+<h3 id="orgheadline46">Integración continua</h3>
+<ul>
+<li class="fragment roll-in">Realizar integraciones cada poco tiempo</li>
+<li class="fragment roll-in">Disminuir el riesgo de "<b>integration hell</b>"</li>
+<li class="fragment roll-in">Automatizar el proceso de testeo</li>
+<li class="fragment roll-in">Automatizar el proceso de despliegue de la aplicación</li>
+<li class="fragment roll-in">Disminuir costes</li>
+<li class="fragment roll-in">Realizar entregas frecuentes</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline47">
+<h3 id="orgheadline47">Integración continua</h3>
+
+<div class="figure">
+<p><img src="https://cdn.travis-ci.org/images/logos/TravisCI-Mascot-1-20feeadb48fc2492ba741d89cb5a5c8a.png" alt="TravisCI-Mascot-1-20feeadb48fc2492ba741d89cb5a5c8a.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline57" data-background="http://a.fod4.com/images/GifGuide/michael_scott/Michael-What-the-office-10400786-400-226.gif" data-background-transition="slide">
+<h2 id="orgheadline57">GitHub y Scrum</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline49">
+<h3 id="orgheadline49">Estrategias</h3>
+<ul>
+<li class="fragment roll-in">Organizaciones de GitHub
+<ul>
+<li>Gestión de equipos</li>
+<li>Gestión de repositorios compartidos</li>
+<li>Gestión de permisos</li>
+
+</ul></li>
+<li class="fragment roll-in">Repositorios compartidos</li>
+<li class="fragment roll-in">Utilización de ramas
+<ul>
+<li>Ramas personales</li>
+<li>Rama principal de integración</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline50">
+<h3 id="orgheadline50">Backlog / issues</h3>
+<ul>
+<li class="fragment roll-in">Creación de una "milestone" para hacer referencia a los objetivos del sprint</li>
+<li class="fragment roll-in">Cada "issue" puede hacer referencia a una historia o una tarea</li>
+<li class="fragment roll-in">Las historias que vayan a realizarse en el sprint (<i>sprint backlog</i>) se asignan a la "milestone"</li>
+<li class="fragment roll-in">Pueden utilizarse las etiquetas para indicar la dificultad o duración</li>
+<li class="fragment roll-in">Para indicar que una persona está trabajando en una tarea se asigna a dicha tarea</li>
+<li class="fragment roll-in">Se pueden utilizar los proyectos como "scrum board"</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline51">
+<h3 id="orgheadline51">Scrum Board / Proyectos</h3>
+
+<div class="figure">
+<p><img src="images/projects.png" alt="projects.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline52">
+<h3 id="orgheadline52">Estimación de tareas / etiquetas</h3>
+
+<div class="figure">
+<p><img src="images/tareas_estimacion.png" alt="tareas_estimacion.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline53">
+<h3 id="orgheadline53">Daily Scrum</h3>
+<ul>
+<li class="fragment roll-in">Cada día se realiza la reunión (entre 5 y 15 minutos)</li>
+<li class="fragment roll-in">Cada persona indica qué tareas ha realizado y cierra los "issues" que tenga pendientes.</li>
+<li class="fragment roll-in">Cada persona indica qué trabajo va a realizar hoy y se asigna los "issues" correspondientes</li>
+<li class="fragment roll-in">Se evalúan los impedimentos que haya</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline54">
+<h3 id="orgheadline54">Para mayor integración: ZenHub</h3>
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/ZenHub_Board.png/640px-ZenHub_Board.png" alt="640px-ZenHub_Board.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline55">
+<h3 id="orgheadline55">Otras herramientas</h3>
+<ul>
+<li>Trello</li>
+<li>Jira</li>
+<li>Slack</li>
+<li>&#x2026;</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline56">
+<h3 id="orgheadline56">Otras herramientas</h3>
+
+<div class="figure">
+<p><img src="images/github_project_management%20tools.png" alt="github_project_management%20tools.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline59">
+<h2 id="orgheadline59">Demo</h2>
+
+<div class="figure">
+<p><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub-Mark.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline58">
+<h3 id="orgheadline58">Gracias por vuestra atención</h3>
+
+<div class="figure">
+<p><img src="http://31.media.tumblr.com/6fdd0fb8e6109e06da0a99c3756f6ee9/tumblr_n2i1gkHHAp1qiy70eo2_250.gif" alt="tumblr_n2i1gkHHAp1qiy70eo2_250.gif" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
