@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8"/>
 <title>Scrum y GitHub</title>
@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/league.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +18,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -30,39 +30,40 @@
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
-<h2>Table of Contents</h2>
+<h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgheadline8">Introducción</a></li>
-<li><a href="#/slide-orgheadline42">Scrum</a></li>
-<li><a href="#/slide-orgheadline54">GitHub</a></li>
-<li><a href="#/slide-orgheadline63">GitHub y Scrum</a></li>
-<li><a href="#/slide-orgheadline64">¿Preguntas?</a></li>
-<li><a href="#/slide-orgheadline66">Demo</a></li>
+<li><a href="#/slide-org1fd734c">Introducción</a></li>
+<li><a href="#/slide-org765db05">Scrum</a></li>
+<li><a href="#/slide-orgc1064af">GitHub</a></li>
+<li><a href="#/slide-orgbb1faf6">GitHub y Scrum</a></li>
+<li><a href="#/slide-org76a1dcf">¿Preguntas?</a></li>
+<li><a href="#/slide-org6c03a61">Demo</a></li>
 </ul>
 </div>
 </div>
 </section>
 <section>
-<section id="slide-orgheadline8">
-<h2 id="orgheadline8">Introducción</h2>
-<div class="outline-text-2" id="text-orgheadline8">
-</div></section>
+<section id="slide-org1fd734c">
+<h2 id="org1fd734c">Introducción</h2>
+<div class="outline-text-2" id="text-org1fd734c">
+</div>
+</section>
 </section>
 <section>
-<section id="slide-orgheadline1">
-<h3 id="orgheadline1">Waterfall</h3>
+<section id="slide-org9a36ef8">
+<h3 id="org9a36ef8">Waterfall</h3>
 
 <div class="figure">
-<p><object type="image/svg+xml" data="images/waterfall.svg" >
+<p><object type="image/svg+xml" data="images/waterfall.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline3">
-<h3 id="orgheadline3">Agile</h3>
+<section id="slide-org2a609fb">
+<h3 id="org2a609fb">Agile</h3>
 <ul>
 <li class="fragment roll-in">Personas por delante de procesos y herramientas</li>
 <li class="fragment roll-in">Software funcional por delante de documentación</li>
@@ -73,8 +74,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline2">
-<h4 id="orgheadline2">Agile no es&#x2026;</h4>
+<section id="slide-org5fe75ee">
+<h4 id="org5fe75ee">Agile no es&#x2026;</h4>
 
 <div class="figure">
 <p><img src="https://image-store.slidesharecdn.com/128c6f87-a881-41cb-ad46-ace12bd27e3f-large.png" alt="128c6f87-a881-41cb-ad46-ace12bd27e3f-large.png" />
@@ -83,8 +84,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline7">
-<h3 id="orgheadline7">Proyecto Sentinel (FBI)</h3>
+<section id="slide-orgd1d0dc3">
+<h3 id="orgd1d0dc3">Proyecto Sentinel (FBI)</h3>
 <ul>
 <li>Modernización de la infraestructura de información del FBI</li>
 <li>Hasta los atentados del 11S se enviaban faxes o CDs</li>
@@ -92,8 +93,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline4">
-<h4 id="orgheadline4">Primer intento - 2001</h4>
+<section id="slide-org04744de">
+<h4 id="org04744de">Primer intento - 2001</h4>
 <ul>
 <li class="fragment roll-in">730000 líneas de código</li>
 <li class="fragment roll-in">$170M</li>
@@ -101,8 +102,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline5">
-<h4 id="orgheadline5">Segundo intento - 2006</h4>
+<section id="slide-orgb312635">
+<h4 id="orgb312635">Segundo intento - 2006</h4>
 <ul>
 <li class="fragment roll-in">Presupuesto: $300M</li>
 <li class="fragment roll-in">Coste final: $500M - $600M</li>
@@ -110,8 +111,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline6">
-<h4 id="orgheadline6">Adopción de Scrum - 2010</h4>
+<section id="slide-org931abd2">
+<h4 id="org931abd2">Adopción de Scrum - 2010</h4>
 <ul>
 <li class="fragment roll-in">Presupuesto: $30M</li>
 <li class="fragment roll-in">Plantilla reducida de 400 a 40 personas</li>
@@ -121,13 +122,13 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline42" data-background="http://www.reactiongifs.us/wp-content/uploads/2015/02/explain_like_im_five_office.gif" data-background-transition="slide">
-<h2 id="orgheadline42">Scrum</h2>
+<section id="slide-org765db05" data-background="http://www.reactiongifs.us/wp-content/uploads/2015/02/explain_like_im_five_office.gif" data-background-transition="slide">
+<h2 id="org765db05">Scrum</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline9">
-<h3 id="orgheadline9">Popularidad</h3>
+<section id="slide-org07b29f7">
+<h3 id="org07b29f7">Popularidad</h3>
 
 <div class="figure">
 <p><img src="images/scrum_stackoverflow.png" alt="scrum_stackoverflow.png" />
@@ -136,8 +137,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline10">
-<h3 id="orgheadline10">Proceso</h3>
+<section id="slide-org2c65d03">
+<h3 id="org2c65d03">Proceso</h3>
 
 <div class="figure">
 <p><img src="images/Scrum_Framework.png" alt="Scrum_Framework.png" />
@@ -146,8 +147,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline16">
-<h3 id="orgheadline16">Roles</h3>
+<section id="slide-org717d7dd">
+<h3 id="org717d7dd">Roles</h3>
 <ul>
 <li class="fragment roll-in">Product Owner</li>
 <li class="fragment roll-in">Equipo de desarrollo</li>
@@ -155,8 +156,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline11">
-<h4 id="orgheadline11">Product Owner</h4>
+<section id="slide-org0ce6646">
+<h4 id="org0ce6646">Product Owner</h4>
 <ul>
 <li class="fragment roll-in">Representa a las partes interesadas (clientes, directivos, otros departamentos)</li>
 <li class="fragment roll-in">Una única persona</li>
@@ -165,8 +166,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline12">
-<h4 id="orgheadline12">Equipo de desarrollo</h4>
+<section id="slide-org2374c1b">
+<h4 id="org2374c1b">Equipo de desarrollo</h4>
 <ul>
 <li class="fragment roll-in">Desarrollan el producto o proyecto</li>
 <li class="fragment roll-in">Entre 4 y 8 personas</li>
@@ -175,8 +176,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline13">
-<h4 id="orgheadline13">Scrum Master</h4>
+<section id="slide-org6fbc326">
+<h4 id="org6fbc326">Scrum Master</h4>
 <ul>
 <li class="fragment roll-in">Facilitador</li>
 <li class="fragment roll-in">Vela porque se siga el proceso</li>
@@ -186,16 +187,16 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline14">
-<h4 id="orgheadline14">Roles</h4>
+<section id="slide-org275efea">
+<h4 id="org275efea">Roles</h4>
 
 <div class="figure">
-<p><img src="https://www.implementingscrum.com/images/060911-scrumtoon.jpg" alt="060911-scrumtoon.jpg" />
+<p><img src="images/huevosconjamon.jpg" alt="huevosconjamon.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline15">
-<h4 id="orgheadline15">Roles</h4>
+<section id="slide-org0452ece">
+<h4 id="org0452ece">Roles</h4>
 
 <div class="figure">
 <p><img src="images/scrum_roles.png" alt="scrum_roles.png" />
@@ -204,8 +205,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline17">
-<h3 id="orgheadline17">Proceso</h3>
+<section id="slide-org4f62165">
+<h3 id="org4f62165">Proceso</h3>
 
 <div class="figure">
 <p><img src="images/Scrum_Framework.png" alt="Scrum_Framework.png" />
@@ -214,8 +215,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline31">
-<h3 id="orgheadline31">Eventos</h3>
+<section id="slide-org93e52ff">
+<h3 id="org93e52ff">Eventos</h3>
 <ul>
 <li class="fragment roll-in">Planning meeting</li>
 <li class="fragment roll-in">Sprint</li>
@@ -225,56 +226,56 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline18">
-<h4 id="orgheadline18">Planning</h4>
+<section id="slide-orge8fc5c2">
+<h4 id="orge8fc5c2">Planning</h4>
 
 <div class="figure">
 <p><img src="images/scrum_planning_meeting.jpg" alt="scrum_planning_meeting.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline19">
-<h4 id="orgheadline19">Planning</h4>
+<section id="slide-orge5c0f5c">
+<h4 id="orge5c0f5c">Planning</h4>
 
 <div class="figure">
 <p><img src="images/planning_clase_1.jpg" alt="planning_clase_1.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline20">
-<h4 id="orgheadline20">Planning</h4>
+<section id="slide-org1b72463">
+<h4 id="org1b72463">Planning</h4>
 
 <div class="figure">
 <p><img src="images/planning_clase_2.jpg" alt="planning_clase_2.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline21">
-<h4 id="orgheadline21">Planning</h4>
+<section id="slide-orge513b3a">
+<h4 id="orge513b3a">Planning</h4>
 
 <div class="figure">
 <p><img src="images/planning_clase_4.jpg" alt="planning_clase_4.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline22">
-<h4 id="orgheadline22">Planning</h4>
+<section id="slide-org21a6ec4">
+<h4 id="org21a6ec4">Planning</h4>
 
 <div class="figure">
 <p><img src="images/planning_clase_5.jpg" alt="planning_clase_5.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline23">
-<h4 id="orgheadline23">Planning (Poker)</h4>
+<section id="slide-org0d3c967">
+<h4 id="org0d3c967">Planning (Poker)</h4>
 
 <div class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/CrispPlanningPokerDeck.jpg" alt="CrispPlanningPokerDeck.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline24">
-<h4 id="orgheadline24">Sprint</h4>
+<section id="slide-org75d8c0b">
+<h4 id="org75d8c0b">Sprint</h4>
 <ul>
 <li class="fragment roll-in">Período de "trabajo"</li>
 <li class="fragment roll-in">Duración fija</li>
@@ -283,48 +284,48 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline25">
-<h4 id="orgheadline25">Daily Scrum</h4>
+<section id="slide-org85b7159">
+<h4 id="org85b7159">Daily Scrum</h4>
 
 <div class="figure">
 <p><img src="images/dailyscrum_1.jpg" alt="dailyscrum_1.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline26">
-<h4 id="orgheadline26">Daily Scrum</h4>
+<section id="slide-org878808a">
+<h4 id="org878808a">Daily Scrum</h4>
 
 <div class="figure">
 <p><img src="images/planning_clase_3.jpg" alt="planning_clase_3.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline27">
-<h4 id="orgheadline27">Daily Scrum</h4>
+<section id="slide-org95735f6">
+<h4 id="org95735f6">Daily Scrum</h4>
 
 <div class="figure">
 <p><img src="images/dailyscrum_2.jpg" alt="dailyscrum_2.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline28">
-<h4 id="orgheadline28">Demo</h4>
+<section id="slide-org87e955d">
+<h4 id="org87e955d">Demo</h4>
 
 <div class="figure">
 <p><img src="images/review_clase_1.jpg" alt="review_clase_1.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline29">
-<h4 id="orgheadline29">Demo</h4>
+<section id="slide-org71eb3a7">
+<h4 id="org71eb3a7">Demo</h4>
 
 <div class="figure">
 <p><img src="images/review_clase_2.jpg" alt="review_clase_2.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline30">
-<h4 id="orgheadline30">Retrospectiva</h4>
+<section id="slide-org8429fd0">
+<h4 id="org8429fd0">Retrospectiva</h4>
 
 <div class="figure">
 <p><img src="images/retrospectiva_1.jpg" alt="retrospectiva_1.jpg" />
@@ -333,8 +334,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline32">
-<h3 id="orgheadline32">Proceso</h3>
+<section id="slide-org8e715a3">
+<h3 id="org8e715a3">Proceso</h3>
 
 <div class="figure">
 <p><img src="images/Scrum_Framework.png" alt="Scrum_Framework.png" />
@@ -343,8 +344,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline41">
-<h3 id="orgheadline41">Artefactos</h3>
+<section id="slide-org0e5eb41">
+<h3 id="org0e5eb41">Artefactos</h3>
 <ul>
 <li class="fragment roll-in">Product Backlog</li>
 <li class="fragment roll-in">Sprint Backlog</li>
@@ -354,8 +355,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline33">
-<h4 id="orgheadline33">Product Backlog</h4>
+<section id="slide-orgb159bef">
+<h4 id="orgb159bef">Product Backlog</h4>
 <ul>
 <li class="fragment roll-in">Lista <b>ordenada</b> (priorizada) de funcionalidades/características deseadas (<b>stories</b>)</li>
 <li class="fragment roll-in">Visible para todas las partes interesadas</li>
@@ -366,8 +367,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline34">
-<h4 id="orgheadline34">Sprint Backlog</h4>
+<section id="slide-org74e2502">
+<h4 id="org74e2502">Sprint Backlog</h4>
 <ul>
 <li class="fragment roll-in">Selección de elementos del product backlog que el equipo considera que puede completar en un sprint</li>
 <li class="fragment roll-in">Se elabora en la sesión de planificación</li>
@@ -377,39 +378,39 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline35">
-<h4 id="orgheadline35">Scrum board</h4>
+<section id="slide-org82c7cae">
+<h4 id="org82c7cae">Scrum board</h4>
 
 <div class="figure">
 <p><img src="images/scrum_kanban_board.jpg" alt="scrum_kanban_board.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline36">
-<h4 id="orgheadline36">Scrum Board</h4>
+<section id="slide-orgdf6025a">
+<h4 id="orgdf6025a">Scrum Board</h4>
 
 <div class="figure">
 <p><img src="images/scrum_board_2.jpg" alt="scrum_board_2.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline37">
-<h4 id="orgheadline37">Scrum board</h4>
+<section id="slide-orge1ee414">
+<h4 id="orge1ee414">Scrum board</h4>
 
 <div class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Scrum_task_board_example.jpg/579px-Scrum_task_board_example.jpg" alt="579px-Scrum_task_board_example.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline38">
-<h4 id="orgheadline38">Product increment</h4>
+<section id="slide-orgbd203ec">
+<h4 id="orgbd203ec">Product increment</h4>
 <ul>
 <li class="fragment roll-in">Cada funcionalidad (<b>story</b>) implementada debe tener valor en sí misma</li>
 
 </ul>
 </section>
-<section id="slide-orgheadline39">
-<h4 id="orgheadline39">Burn Down Chart</h4>
+<section id="slide-org9b28b3a">
+<h4 id="org9b28b3a">Burn Down Chart</h4>
 <ul>
 <li class="fragment roll-in">Muestra la cantidad de trabajo (medido en <b>story points</b>) que queda por realizar</li>
 <li class="fragment roll-in">Se estima diariamente en la sesión <i>daily scrum</i></li>
@@ -418,8 +419,8 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline40">
-<h4 id="orgheadline40">Burndown chart</h4>
+<section id="slide-orgcc78528">
+<h4 id="orgcc78528">Burndown chart</h4>
 
 <div class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Burn_down_chart.png" alt="Burn_down_chart.png" />
@@ -428,13 +429,13 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline54" data-background="https://s3.amazonaws.com/external_clips/attachments/79257/original/chinhands-3.gif?1444766396" data-background-transition="slide">
-<h2 id="orgheadline54">GitHub</h2>
+<section id="slide-orgc1064af" data-background="https://s3.amazonaws.com/external_clips/attachments/79257/original/chinhands-3.gif?1444766396" data-background-transition="slide">
+<h2 id="orgc1064af">GitHub</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline43">
-<h3 id="orgheadline43">Características</h3>
+<section id="slide-orgdf5de3d">
+<h3 id="orgdf5de3d">Características</h3>
 <ul>
 <li class="fragment roll-in">Control de versiones (obvio)</li>
 <li class="fragment roll-in">Plataforma más utilizada para proyectos OpenSource</li>
@@ -448,8 +449,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline44">
-<h3 id="orgheadline44">Colaboración: Forks y Pull Requests</h3>
+<section id="slide-orgd437262">
+<h3 id="orgd437262">Colaboración: Forks y Pull Requests</h3>
 <dl>
 <dt>Fork</dt><dd>Copia de un repositorio para su modificación/mejora/edición</dd>
 <dt>Pull Request</dt><dd>Petición para integrar los cambios realizados en el repositorio original</dd>
@@ -458,8 +459,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline45">
-<h3 id="orgheadline45">Alojamiento: GitHub Pages</h3>
+<section id="slide-orgbf2718a">
+<h3 id="orgbf2718a">Alojamiento: GitHub Pages</h3>
 
 <div class="figure">
 <p><img src="images/ghpages.png" alt="ghpages.png" />
@@ -468,32 +469,32 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline49">
-<h3 id="orgheadline49">Incidencias: Issues</h3>
+<section id="slide-org5ea0edc">
+<h3 id="org5ea0edc">Incidencias: Issues</h3>
 
 <div class="figure">
 <p><img src="images/issues.png" alt="issues.png" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline46">
-<h4 id="orgheadline46">Milestones</h4>
+<section id="slide-org39d1cd1">
+<h4 id="org39d1cd1">Milestones</h4>
 
 <div class="figure">
 <p><img src="images/milestones.png" alt="milestones.png" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline47">
-<h4 id="orgheadline47">Asignación</h4>
+<section id="slide-org845be64">
+<h4 id="org845be64">Asignación</h4>
 
 <div class="figure">
 <p><img src="images/issues_milestones.png" alt="issues_milestones.png" />
 </p>
 </div>
 </section>
-<section id="slide-orgheadline48">
-<h4 id="orgheadline48">Planificación</h4>
+<section id="slide-orga9e671f">
+<h4 id="orga9e671f">Planificación</h4>
 
 <div class="figure">
 <p><img src="images/milestone_assigned.png" alt="milestone_assigned.png" />
@@ -502,8 +503,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline50">
-<h3 id="orgheadline50">Proyectos</h3>
+<section id="slide-orge8203c4">
+<h3 id="orge8203c4">Proyectos</h3>
 
 <div class="figure">
 <p><img src="images/projects.png" alt="projects.png" />
@@ -512,8 +513,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline53">
-<h3 id="orgheadline53">Integración continua</h3>
+<section id="slide-org89fb7ac">
+<h3 id="org89fb7ac">Integración continua</h3>
 <ul>
 <li class="fragment roll-in">Realizar integraciones cada poco tiempo</li>
 <li class="fragment roll-in">Disminuir el riesgo de "<b>integration hell</b>"</li>
@@ -524,31 +525,23 @@ Sorry, your browser does not support SVG.</object>
 
 </ul>
 </section>
-<section id="slide-orgheadline51">
-<h4 id="orgheadline51">Integración continua</h4>
+<section id="slide-orge998335">
+<h4 id="orge998335">Integración continua</h4>
 
 <div class="figure">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Continous_Delivery_Test_Strategy.jpg/640px-Continous_Delivery_Test_Strategy.jpg" alt="640px-Continous_Delivery_Test_Strategy.jpg" />
-</p>
-</div>
-</section>
-<section id="slide-orgheadline52">
-<h4 id="orgheadline52">Integración continua</h4>
-
-<div class="figure">
-<p><img src="https://cdn.travis-ci.org/images/logos/TravisCI-Mascot-1-20feeadb48fc2492ba741d89cb5a5c8a.png" alt="TravisCI-Mascot-1-20feeadb48fc2492ba741d89cb5a5c8a.png" />
+<p><a href="https://travis-ci.org/pedroprieto/test_presentacion_github_scrum"><img src="images/Tessa-1-sm.png" alt="Tessa-1-sm.png" /></a>
 </p>
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline63" data-background="http://a.fod4.com/images/GifGuide/michael_scott/Michael-What-the-office-10400786-400-226.gif" data-background-transition="slide">
-<h2 id="orgheadline63">GitHub y Scrum</h2>
+<section id="slide-orgbb1faf6" data-background="http://a.fod4.com/images/GifGuide/michael_scott/Michael-What-the-office-10400786-400-226.gif" data-background-transition="slide">
+<h2 id="orgbb1faf6">GitHub y Scrum</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline55">
-<h3 id="orgheadline55">Estrategias</h3>
+<section id="slide-orgb3c0c4a">
+<h3 id="orgb3c0c4a">Estrategias</h3>
 <ul>
 <li class="fragment roll-in">Organizaciones de GitHub
 <ul>
@@ -569,8 +562,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline56">
-<h3 id="orgheadline56">Backlog / issues</h3>
+<section id="slide-orga766ef4">
+<h3 id="orga766ef4">Backlog / issues</h3>
 <ul>
 <li class="fragment roll-in">Creación de una "milestone" para hacer referencia a los objetivos del sprint</li>
 <li class="fragment roll-in">Cada "issue" puede hacer referencia a una historia o una tarea</li>
@@ -583,8 +576,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline57">
-<h3 id="orgheadline57">Scrum Board / Proyectos</h3>
+<section id="slide-orgbe2d393">
+<h3 id="orgbe2d393">Scrum Board / Proyectos</h3>
 
 <div class="figure">
 <p><img src="images/projects.png" alt="projects.png" />
@@ -593,8 +586,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline58">
-<h3 id="orgheadline58">Estimación de tareas / etiquetas</h3>
+<section id="slide-org0e91cee">
+<h3 id="org0e91cee">Estimación de tareas / etiquetas</h3>
 
 <div class="figure">
 <p><img src="images/tareas_estimacion.png" alt="tareas_estimacion.png" />
@@ -603,8 +596,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline59">
-<h3 id="orgheadline59">Daily Scrum</h3>
+<section id="slide-org4b6481a">
+<h3 id="org4b6481a">Daily Scrum</h3>
 <ul>
 <li class="fragment roll-in">Cada día se realiza la reunión (entre 5 y 15 minutos)</li>
 <li class="fragment roll-in">Cada persona indica qué tareas ha realizado y cierra los "issues" que tenga pendientes.</li>
@@ -615,8 +608,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline60">
-<h3 id="orgheadline60">Para mayor integración: ZenHub</h3>
+<section id="slide-org61cfa78">
+<h3 id="org61cfa78">Para mayor integración: ZenHub</h3>
 
 <div class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/ZenHub_Board.png/640px-ZenHub_Board.png" alt="640px-ZenHub_Board.png" />
@@ -625,8 +618,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline61">
-<h3 id="orgheadline61">Otras herramientas</h3>
+<section id="slide-orgab5a023">
+<h3 id="orgab5a023">Otras herramientas</h3>
 <ul>
 <li>Trello</li>
 <li>Jira</li>
@@ -637,18 +630,18 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline62">
-<h3 id="orgheadline62">Otras herramientas</h3>
+<section id="slide-org32e0467">
+<h3 id="org32e0467">Otras herramientas</h3>
 
 <div class="figure">
-<p><img src="images/github_project_management%20tools.png" alt="github_project_management%20tools.png" />
+<p><img src="images/github_project_management tools.png" alt="github_project_management tools.png" />
 </p>
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline64">
-<h2 id="orgheadline64">¿Preguntas?</h2>
+<section id="slide-org76a1dcf">
+<h2 id="org76a1dcf">¿Preguntas?</h2>
 
 <div class="figure">
 <p><img src="images/questions.jpg" alt="questions.jpg" />
@@ -657,18 +650,18 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline66">
-<h2 id="orgheadline66">Demo</h2>
+<section id="slide-org6c03a61">
+<h2 id="org6c03a61">Demo</h2>
 
 <div class="figure">
-<p><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub-Mark.png" />
+<p><a href="https://github.com/pedroprieto/test_presentacion_github_scrum"><img src="images/github_logo.png" alt="github_logo.png" /></a>
 </p>
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline65">
-<h3 id="orgheadline65">Gracias por vuestra atención</h3>
+<section id="slide-org9feff3c">
+<h3 id="org9feff3c">Gracias por vuestra atención</h3>
 
 <div class="figure">
 <p><img src="http://31.media.tumblr.com/6fdd0fb8e6109e06da0a99c3756f6ee9/tumblr_n2i1gkHHAp1qiy70eo2_250.gif" alt="tumblr_n2i1gkHHAp1qiy70eo2_250.gif" />
@@ -676,28 +669,32 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </section>
 </section>
+<section>
+<section id="slide-org5755859">
+<h3 id="org5755859">Ball Point Challenge</h3>
+<ul>
+<li>Todos formáis un gran equipo</li>
+<li>Cada pelota tiene que pasar un tiempo en el aire</li>
+<li>No se puede pasar la pelota a la persona que tengáis a izquierda o derecha</li>
+<li>Todos los miembros del equipo deben tocar la pelota</li>
+<li>La pelota debe llegar al mismo punto de donde salió</li>
+<li>Cada iteración = 2 minutos</li>
+<li>Se realiza una estimación antes de cada iteración</li>
+<li>Tiempo de preparación = 2 minutos</li>
+<li>Tras cada iteración, 1 minuto de planificación</li>
+<li>Haremos 5 iteraciones</li>
+
+</ul>
+</section>
+</section>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
-<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: 'c',
-rollingLinks: false,
-keyboard: true,
-overview: true,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-transitionSpeed: 'default',
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
@@ -706,11 +703,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>

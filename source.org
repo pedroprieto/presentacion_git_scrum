@@ -1,0 +1,269 @@
+#+Title: Scrum y GitHub
+#+Author: Pedro Prieto
+#+Email: pedpral@gmail.com
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/
+#+REVEAL_THEME: league
+#+REVEAL_HLEVEL: 2
+#+OPTIONS: toc:1 num:nil
+* Introducción
+** Waterfall
+   [[file:images/waterfall.svg]]
+*** COMMENT Desventajas
+- Se asume que se conoce todo desde el principio
+- Cambios en especificaciones es malo y puede ser controlado
+- 
+** Agile
+#+ATTR_REVEAL: :frag (roll-in) 
+- Personas por delante de procesos y herramientas
+- Software funcional por delante de documentación
+- Colaboración con el cliente frente a contrato a priori
+- Adaptación al cambio frente a ceñirse al plan
+- Equipos auto organizados
+- Evaluación y adaptación continuas
+*** Agile no es...
+[[https://image-store.slidesharecdn.com/128c6f87-a881-41cb-ad46-ace12bd27e3f-large.png]]
+** Proyecto Sentinel (FBI)
+- Modernización de la infraestructura de información del FBI
+- Hasta los atentados del 11S se enviaban faxes o CDs
+- No había manera de enviar un correo electrónico de manera segura con fotos de posibles sospechosos
+*** Primer intento - 2001
+#+ATTR_REVEAL: :frag (roll-in) 
+- 730000 líneas de código
+- $170M
+- Abandonado en 2005
+*** Segundo intento - 2006
+#+ATTR_REVEAL: :frag (roll-in) 
+ - Presupuesto: $300M
+ - Coste final: $500M - $600M
+ - Abandonado en 2010
+*** Adopción de Scrum - 2010
+#+ATTR_REVEAL: :frag (roll-in) 
+ - Presupuesto: $30M
+ - Plantilla reducida de 400 a 40 personas
+ - Sistema operativo al cabo de un año
+* Scrum
+:PROPERTIES:
+    :reveal_background: http://www.reactiongifs.us/wp-content/uploads/2015/02/explain_like_im_five_office.gif
+    :reveal_background_trans: slide
+    :END:
+** Popularidad
+[[file:images/scrum_stackoverflow.png]]
+** Proceso
+[[file:images/Scrum_Framework.png]]
+** Roles
+#+ATTR_REVEAL: :frag (roll-in) 
+- Product Owner
+- Equipo de desarrollo
+- Scrum Master
+*** Product Owner
+#+ATTR_REVEAL: :frag (roll-in) 
+- Representa a las partes interesadas (clientes, directivos, otros departamentos)
+- Una única persona
+- Se encarga de dejar claras las especificaciones y objetivos del producto o proyecto
+- Colabora con el equipo de desarrollo (reuniones, etc.)
+*** Equipo de desarrollo
+#+ATTR_REVEAL: :frag (roll-in) 
+- Desarrollan el producto o proyecto
+- Entre 4 y 8 personas
+- Auto organizado
+- Multidisciplinar
+*** Scrum Master
+#+ATTR_REVEAL: :frag (roll-in) 
+- Facilitador
+- Vela porque se siga el proceso
+- Facilita las reuniones
+- Elimina impedimentos
+- Protege al equipo de injerencias e interrupciones
+*** Roles
+   [[file:images/huevosconjamon.jpg]]
+*** Roles
+[[file:images/scrum_roles.png]]
+** Proceso
+[[file:images/Scrum_Framework.png]]
+** Eventos
+#+ATTR_REVEAL: :frag (roll-in) 
+- Planning meeting
+- Sprint
+- Daily scrum / standup
+- Demo
+- Retrospectiva
+*** Planning
+[[file:images/scrum_planning_meeting.jpg]]
+*** Planning
+[[file:images/planning_clase_1.jpg]]
+*** Planning
+[[file:images/planning_clase_2.jpg]]
+*** Planning
+[[file:images/planning_clase_4.jpg]]
+*** Planning
+[[file:images/planning_clase_5.jpg]]
+*** Planning (Poker)
+[[https://upload.wikimedia.org/wikipedia/commons/e/eb/CrispPlanningPokerDeck.jpg]]
+*** Sprint
+#+ATTR_REVEAL: :frag (roll-in) 
+- Período de "trabajo"
+- Duración fija
+- De 2 a 4 semanas (la mayoría)
+- Durante el sprint no pueden cambiarse los objetivos definidos (funcionalidades, etc.)
+*** Daily Scrum
+[[file:images/dailyscrum_1.jpg]]
+*** Daily Scrum
+[[file:images/planning_clase_3.jpg]]
+*** Daily Scrum
+[[file:images/dailyscrum_2.jpg]]
+*** Demo
+[[file:images/review_clase_1.jpg]]
+*** Demo
+[[file:images/review_clase_2.jpg]]
+*** Retrospectiva
+[[file:images/retrospectiva_1.jpg]]
+** Proceso
+[[file:images/Scrum_Framework.png]]
+** Artefactos
+#+ATTR_REVEAL: :frag (roll-in) 
+- Product Backlog
+- Sprint Backlog
+- Scrum Board
+- Product increment
+- Burn Down Chart
+*** Product Backlog
+#+ATTR_REVEAL: :frag (roll-in) 
+- Lista *ordenada* (priorizada) de funcionalidades/características deseadas (*stories*)
+- Visible para todas las partes interesadas
+- Cualquiera puede añadir nuevos elementos
+- Los elementos de la parte superior están más detallados
+- Cada elemento especifica el *qué* (no el cómo)
+- Cada elemento tiene una estimación de dificultad/duración (*story points*)
+*** Sprint Backlog
+#+ATTR_REVEAL: :frag (roll-in) 
+- Selección de elementos del product backlog que el equipo considera que puede completar en un sprint
+- Se elabora en la sesión de planificación
+- Visible para el equipo y referenciado durante el /daily scrum/
+- No se pueden añadir nuevas funcionalidades a implementar una vez que se han fijado (*fixed scope*)
+- Es posible que haya que realizar tareas adicionales no previstas para alcanzar los objetivos definidos
+*** Scrum board
+[[file:images/scrum_kanban_board.jpg]]
+*** Scrum Board
+[[file:images/scrum_board_2.jpg]]
+*** Scrum board
+[[https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Scrum_task_board_example.jpg/579px-Scrum_task_board_example.jpg]]
+*** Product increment
+#+ATTR_REVEAL: :frag (roll-in) 
+- Cada funcionalidad (*story*) implementada debe tener valor en sí misma
+*** Burn Down Chart
+#+ATTR_REVEAL: :frag (roll-in) 
+- Muestra la cantidad de trabajo (medido en *story points*) que queda por realizar
+- Se estima diariamente en la sesión /daily scrum/
+- Facilita la auto-organización
+- Para uso del equipo únicamente (no como medida de presión por parte de los gestores)
+*** Burndown chart
+[[https://upload.wikimedia.org/wikipedia/commons/8/8c/Burn_down_chart.png]]
+* GitHub
+:PROPERTIES:
+    :reveal_background: https://s3.amazonaws.com/external_clips/attachments/79257/original/chinhands-3.gif?1444766396
+    :reveal_background_trans: slide
+    :END:
+** Características
+#+ATTR_REVEAL: :frag (roll-in) 
+ - Control de versiones (obvio)
+ - Plataforma más utilizada para proyectos OpenSource
+ - Colaboración
+ - Alojamiento web estático gratuito (GitHub Pages)
+ - Gestión de incidencias (issues)
+ - Gestión de proyectos (mínima)
+ - Integración continua
+** Colaboración: Forks y Pull Requests
+- Fork :: Copia de un repositorio para su modificación/mejora/edición
+- Pull Request :: Petición para integrar los cambios realizados en el repositorio original
+** Alojamiento: GitHub Pages
+[[file:images/ghpages.png]]
+** Incidencias: Issues
+[[file:images/issues.png]]
+*** Milestones
+[[file:images/milestones.png]]
+*** Asignación
+[[file:images/issues_milestones.png]]
+*** Planificación
+[[file:images/milestone_assigned.png]]
+** Proyectos
+[[file:images/projects.png]]
+** Integración continua
+#+ATTR_REVEAL: :frag (roll-in) 
+- Realizar integraciones cada poco tiempo
+- Disminuir el riesgo de "*integration hell*"
+- Automatizar el proceso de testeo
+- Automatizar el proceso de despliegue de la aplicación
+- Disminuir costes
+- Realizar entregas frecuentes
+*** Integración continua
+[[https://travis-ci.org/pedroprieto/test_presentacion_github_scrum][file:images/Tessa-1-sm.png]]
+* GitHub y Scrum
+:PROPERTIES:
+    :reveal_background: http://a.fod4.com/images/GifGuide/michael_scott/Michael-What-the-office-10400786-400-226.gif
+    :reveal_background_trans: slide
+    :END:
+** Estrategias
+#+ATTR_REVEAL: :frag (roll-in) 
+- Organizaciones de GitHub
+  - Gestión de equipos
+  - Gestión de repositorios compartidos
+  - Gestión de permisos
+- Repositorios compartidos
+- Utilización de ramas
+  - Ramas personales
+  - Rama principal de integración
+** Backlog / issues
+#+ATTR_REVEAL: :frag (roll-in) 
+- Creación de una "milestone" para hacer referencia a los objetivos del sprint
+- Cada "issue" puede hacer referencia a una historia o una tarea
+- Las historias que vayan a realizarse en el sprint (/sprint backlog/) se asignan a la "milestone"
+- Pueden utilizarse las etiquetas para indicar la dificultad o duración
+- Para indicar que una persona está trabajando en una tarea se asigna a dicha tarea
+- Se pueden utilizar los proyectos como "scrum board"
+** Scrum Board / Proyectos
+[[file:images/projects.png]]
+** Estimación de tareas / etiquetas
+[[file:images/tareas_estimacion.png]]
+** Daily Scrum
+#+ATTR_REVEAL: :frag (roll-in) 
+- Cada día se realiza la reunión (entre 5 y 15 minutos)
+- Cada persona indica qué tareas ha realizado y cierra los "issues" que tenga pendientes.
+- Cada persona indica qué trabajo va a realizar hoy y se asigna los "issues" correspondientes
+- Se evalúan los impedimentos que haya
+** Para mayor integración: ZenHub
+[[https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/ZenHub_Board.png/640px-ZenHub_Board.png]]
+** Otras herramientas
+- Trello
+- Jira
+- Slack
+- ...
+** Otras herramientas
+[[file:images/github_project_management%20tools.png]]
+* ¿Preguntas?
+[[file:images/questions.jpg]]
+* Demo
+[[https://github.com/pedroprieto/test_presentacion_github_scrum][file:images/github_logo.png]]
+** Gracias por vuestra atención
+ [[http://31.media.tumblr.com/6fdd0fb8e6109e06da0a99c3756f6ee9/tumblr_n2i1gkHHAp1qiy70eo2_250.gif]]
+** Ball Point Challenge
+# http://dpwhelan.com/blog/uncategorized/learning-scrum-through-the-ball-point-game/
+- Todos formáis un gran equipo
+- Cada pelota tiene que pasar un tiempo en el aire
+- No se puede pasar la pelota a la persona que tengáis a izquierda o derecha
+- Todos los miembros del equipo deben tocar la pelota
+- La pelota debe llegar al mismo punto de donde salió
+- Cada iteración = 2 minutos
+- Se realiza una estimación antes de cada iteración
+- Tiempo de preparación = 2 minutos
+- Tras cada iteración, 1 minuto de planificación
+- Haremos 5 iteraciones
+
+* COMMENT prueba 1
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: data-background-video="../testvideo.mp4"; data-background-video-loop="loop"
+    :END:
+* COMMENT Gifs adicionales
+[[http://a.fod4.com/images/GifGuide/michael_scott/iiiiiiiiloveyou.gif]]
+[[https://images.gr-assets.com/hostedimages/1381404044ra/4810150.gif]]
+[[https://media.giphy.com/media/SZ8jVUnGerfWM/giphy.gif]]
+
