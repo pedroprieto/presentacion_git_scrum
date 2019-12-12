@@ -1,4 +1,4 @@
-#+Title: Scrum y GitHub
+#+Title: Desarrollo Ágil de Software con Scrum
 #+Author: Pedro Prieto
 #+Email: pedpral@gmail.com
 #+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/
